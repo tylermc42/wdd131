@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Your Name</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Your Name, Keyword summary of page content">
+    <meta name="author" content="Your Name">
+</head>
+<body>
+    <header>
+        <h1>Your Page Heading</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/">LinkedIn Profile</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Favorite Scripture</a></li>
+                <li><a href="#">Final Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Section Heading 1</h2>
+            <img src="image1.jpg" alt="Description of image 1">
+            <p>Content for the first section.</p>
+        </section>
+        <section class="card">
+            <h2>Section Heading 2</h2>
+            <img src="image2.jpg" alt="Description of image 2">
+            <p>Content for the second section.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Your Name, Your State or Country.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+</html>

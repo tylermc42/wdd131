@@ -3,14 +3,71 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width,initial-scale=1.0'>
-    <title>Page Title</title>
-    <meta name='subtitle here' content='description here'>
+    <title>WDD 131 - Dynamic Web Fundamentals - Tyler McCleve</title>
+    <meta name='Home page' content='WDD 131 - Dynamic Web Fundamentals, Tyler McCleve, This is the first assignment of the course to review previously learned html and css'>
     <meta name='author' content='Tyler McCleve'>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header><h1>Page Title</h1></header>
-    <nav></nav>
-    <main></main>
-    <footer>Tyler McCleve | BYU Idaho | WDD 131</footer>
+    <header>
+        <div class="title">
+        <h1>WDD 131 - Dynamic Web Fundamentals - Tyler McCleve</h1>
+        </div>
+            <nav class="head_links">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/tyler-mccleve-225a97334/">LinkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+                    <li><a href="final_project">Final Project</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about_me">
+                <img src="images/profile.jpg" alt="Profile Picture" width="200">
+                <p>
+                    My name is Tyler McCleve. I live in Queen Creek, Arizona with my 
+                    wife, daughter and two labs. I currently work as a Detention Officer 
+                    for Chandler Police Department.
+                </p>
+                
+                <h3>Toloria, Madagascar</h3>
+                <img src="images/mx_flag.png" alt="Mexico Flag" width="200">
+                <p>
+                    Madagascar is the 4th largest island in the world and is located
+                    in the Indian Ocean. It is home to 5% of the world's plant and animal 
+                    species, of which more than 80% are endemic to Madagascar. The island is 
+                    best known for its lemurs, baobab trees, and vanilla. 
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <div class="resources">
+                <ul>
+                    <li><a href="https://dev.to/">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/"> W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/es/"> Udemy</a></li>
+                    <li><a href="https://imageplaceholder.net/"> Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Tyler McCleve | Arizona</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
 </body>
 </html>
