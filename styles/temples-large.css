@@ -1,0 +1,44 @@
+@media (min-width: 1200px) {
+    header {
+        background-color: blanchedalmond;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 1rem;
+        font-family: "Inter", serif;
+    }
+    
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        flex-direction: row;
+        /* border: 1px solid black; */
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    h1 {
+        /* border: 1px solid black; */
+        width: 100%;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    
+    #menu {
+		display: none; /* hide hamburger button */
+
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+    
+}

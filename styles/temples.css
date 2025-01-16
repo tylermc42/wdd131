@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 1200px) {
+    .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    }
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+         position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    #menu::before {
+        content: "☰";
+    }
+    #menu.open::before {
+        content: "X";
+        color: white;
+        padding: .5rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: #333;
+        color: #fff;
+    }
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .open a {
+        display: block;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+    
+
+}
+
+@media (max-width: 800px) {
+    .images {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        }
+    
+        #menu {
+            font-size: 1.5rem;
+            border: 0;
+            background: none;
+            color: #000;
+             position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+        #menu::before {
+            content: "☰";
+        }
+        #menu.open::before {
+            content: "X";
+            color: white;
+            padding: .5rem;
+        }
+        .navigation {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            list-style: none;
+            background-color: #333;
+            color: #fff;
+        }
+        .navigation a {
+            display: none;
+            padding: 1rem;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .open a {
+            display: block;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+}
+
+
+header {
+    width: auto;
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1rem;
+    font-family: "Inter", serif;
+}
+
+
+
+main {
+    background-color: cadetblue;
+    font-family: "Playwrite AU SA", serif;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+    padding: 2rem;
+    text-decoration: underline;
+}
+
+figure {
+    padding: 2rem;
+    background-color: blanchedalmond;
+    margin: 1rem;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 1rem;
+}
