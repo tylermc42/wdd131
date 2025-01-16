@@ -1,0 +1,15 @@
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    text-align: center;
+    background-color: blanchedalmond;
+}
+
+footer {
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
