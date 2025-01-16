@@ -28,6 +28,7 @@
         padding: .5rem;
     }
 
+
     .navigation {
         display: flex;
         flex-direction: column;
@@ -38,7 +39,7 @@
     }
     .navigation a {
         display: none;
-        padding: 1rem;
+        padding: 2rem;
         text-align: center;
         text-decoration: none;
         color: #fff;
@@ -48,7 +49,7 @@
         display: block;
     }
     
-    nav a:hover {
+    .navigation a:hover {
         text-decoration: underline;
     }
     
@@ -62,46 +63,46 @@
         justify-items: center;
         }
     
-        #menu {
-            font-size: 1.5rem;
-            border: 0;
-            background: none;
-            color: #000;
-             position: absolute;
-            top: 1rem;
-            right: 1rem;
-        }
-        #menu::before {
-            content: "☰";
-        }
-        #menu.open::before {
-            content: "X";
-            color: white;
-            padding: .5rem;
-        }
-        .navigation {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            list-style: none;
-            background-color: #333;
-            color: #fff;
-        }
-        .navigation a {
-            display: none;
-            padding: 1rem;
-            text-align: center;
-            text-decoration: none;
-            color: #fff;
-        }
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+         position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    #menu::before {
+        content: "☰";
+    }
+    #menu.open::before {
+        content: "X";
+        color: white;
+        padding: .5rem;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        background-color: #333;
+        color: #fff;
+    }
+    .navigation a {
+        display: none;
+        padding: 2rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
         
-        .open a {
-            display: block;
-        }
+    .open a {
+        display: block;
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    nav a:hover {
+        text-decoration: underline;
+    }
         
 }
 
@@ -116,7 +117,10 @@ header {
     font-family: "Inter", serif;
 }
 
-
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
 
 main {
     background-color: cadetblue;
