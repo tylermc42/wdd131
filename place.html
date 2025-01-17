@@ -10,6 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+    <script src='scripts/place.js' defer></script>
+    <script src='scripts/getdates.js' defer></script>
+
 </head>
 <body>
     <header>
@@ -25,38 +28,37 @@
         </div>
         <div class="data">
             <h2>Data</h2>
-            <p></p>
             <h3>Area:</h3>
-            <p></p>
+            <p>113,998 sq miles</p>
             <h3>Population:</h3>
-            <p></p>
+            <p>7,582,384</p>
             <h3>Captial:</h3>
-            <p></p>
+            <p>Phoenix</p>
             <h3>Languages:</h3>
-            <p></p>
+            <p>English</p>
             <h3>Currency:</h3>
-            <p></p>
+            <p>US Dollar</p>
             <h3>Time Zone:</h3>
-            <p></p>
+            <p>Mountain Standard Time</p>
             <h3>Calling Code:</h3>
-            <p></p>
+            <p>480, 520, 602, 623, 928</p>
             <h3>Internet TLD:</h3>
-            <p></p>
+            <p>.az</p>
 
         </div>
         <div class="weather">
-            <div class="weather_title">
+            <div class="w_title">
                 <h2>Weather</h2>
-                <img src="images/weather.svg" width="40px">
+                <img class="mobile-show" src="images/weather.svg" style="display: none;" width="35" alt="Weather Icon">
             </div>
-            <h3>Area:</h3>
-            <p></p>
+            <h3>Temperature</h3>
+            <p>57 &deg;F</p>
             <h3>Conditions:</h3>
-            <p></p>
+            <p>Sunny</p>
             <h3>Wind:</h3>
-            <p></p>
+            <p>5 mph</p>
             <h3>Wind Chill:</h3>
-            <p></p>
+            <p><span id="wind"></span></p>
         </div>
     </main>
     <footer>
@@ -64,6 +66,4 @@
         <p>Date Last Modified: <span id='last-modified'></span></p>
     </footer>
 </body>
-<script src='scripts/place.js' defer></script>
-<script src='scripts/getdates.js'></script>
 </html>
