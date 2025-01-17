@@ -103,7 +103,9 @@ footer {
         margin-left: 5px;
     }
 
-    
+    .mobile-show {
+        display: none;
+    }
 }
 
 /* Small view */
