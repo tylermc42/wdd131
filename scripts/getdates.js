@@ -9,3 +9,4 @@ const lastModified = document.lastModified;
 
 // Output the last modified date to the footer's second paragraph
 document.getElementById("last-modified").textContent = lastModified;
+
