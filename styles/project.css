@@ -5,3 +5,27 @@
     --header-font: "Playwrite AU SA", serif;
     --support-font: "Inter", serif;
 }
+
+
+
+h1, h2 {
+    font-family: var(--header-font);
+}
+
+p {
+    font-family: var(--support-font);
+}
+
+header, footer {
+    background-color: var(--main-color);
+}
+
+main {
+    background-color: var(--second-color);
+}
+
+div {
+    background-color: var(--third-color);
+    margin: 2rem;
+    text-align: center;
+}
