@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <meta name="description" content="Showing our understanding on how to create and properly display forms on a desktop and mobile device">
+    <meta name="author" content="Tyler McCleve">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <script src='scripts/getdates.js' defer></script>
+</head>
+<body>
+    <header><h1>Product Review</h1></header>
+    <main>
+        <form method="get" action="review.html" class="productReview">
+            <p>Labels followed by * indicates required fields</p>
+            <fieldset class="productName">
+                <label for="product-name">Product Name*</label>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </fieldset>
+            <fieldset class="rating">
+                <div>Overall Rating*</div>
+                <div>
+                    <label><input type="radio" id="one" name="rating" value="one" required>&star;</label>
+                    <label><input type="radio" id="two" name="rating" value="two" required>&star;&star;</label>
+                    <label><input type="radio" id="three" name="rating" value="three" required>&star;&star;&star;</label>
+                    <label><input type="radio" id="four" name="rating" value="four" required>&star;&star;&star;&star;</label>
+                    <label><input type="radio" id="five" name="rating" value="five" required>&star;&star;&star;&star;&star;</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>Date of Installation* <input type="date" name="installationDate" required></label>
+                
+            </fieldset>
+            <fieldset>
+                <div>What features did you find useful?</div>
+                <div class="checkboxes">
+                    <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                    <label><input type="checkbox" id="easeOfUse" name="easeOfUse" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                    <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <label>Written Review <input type="text" id="writtenReview" name="review"></label>
+            </fieldset>
+            <fieldset>
+                <label>Your Name <input type="text" id="userName" name="userName"></label>
+            </fieldset>
+            <input type="submit" value="Publish My Review">
+        </form>
+    </main>
+    <footer><p>&copy; <span id='copyright-year'></span> | Tyler McCleve | BYU Idaho | WDD 131</p>
+    <p>Date Last Modified: <span id='last-modified'></span></p></footer>
+</body>
+
+</html>
