@@ -12,6 +12,7 @@ header, footer {
     padding: .1rem;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-family: var(--header-font);
 
 }
 
@@ -30,7 +31,7 @@ body {
     padding: 5px;
     max-width: 500px;
     min-width: 430px;
-
+    font-family: var(--support-font);
 }
 
 .productReview fieldset {
