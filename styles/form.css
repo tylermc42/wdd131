@@ -7,7 +7,7 @@
 }
 
 header, footer {
-    background-color: var(--third-color);
+    background-color: var(--second-color);
     text-align: center;
     padding: .1rem;
     margin-top: 10px;
@@ -54,6 +54,9 @@ body {
 .productReview input[type="checkbox"]{
     margin-right: 6px;
     margin-left: 10px;
+    border: 0;
+    width: 5%;
+    height: 1.3rem
 }
 
 .checkboxes label{
