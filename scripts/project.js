@@ -3,7 +3,7 @@ const signupMessage = document.getElementById('signupMessage');
 
 signupForm.addEventListener('submit', function(event) {
     event.preventDefault();
-    const firstName = document.getElementById('firstName').value;
+    const firstName = document.getElementById('name').value;
     const email = document.getElementById('email').value;
 
     if (firstName && email) {
@@ -38,3 +38,13 @@ function uploadData() {
     // Add your upload logic here
     console.log('Form submitted', formData);
 }
+
+// clear fields after submit button is pressed
+document.querySelector('form').addEventListener('submit', function() {
+    document.getElementById('name').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
+    document.getElementById('address').value = '';
+    document.getElementById("Radio-button").checked=false
+});
+

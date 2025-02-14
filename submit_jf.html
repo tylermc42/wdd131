@@ -34,14 +34,16 @@
         </div>
     </header>
     <main class="submit_main">
-        <h2>User Form Submission</h2>
-        <p>If you have form tht you need to turn in to the HOA, use this page to upload all your forms!</p>
-        <form id="submissionForm"  class="submissionform" onsubmit="uploadData(); return false;">
+        <div class="submit_title">
+            <h2>User Form Submission</h2>
+            <p>If you have form that you need to turn in to the HOA, use this page to upload all your forms!</p>
+        </div>
+        <form class="submissionform">
             <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required><br><br>
+            <input type="text" id="name" name="name" required><br><br>
     
             <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required><br><br>
+            <input type="text" id="name" name="name" required><br><br>
     
             <label for="address">Address:</label>
             <input type="text" id="address" name="address" required><br><br>
@@ -58,9 +60,10 @@
             <textarea id="explanation" name="explanation" rows="4" cols="50" required></textarea><br><br>
     
             <label for="documents">Upload documents:</label>
-            <input type="file" id="documents" name="documents" multiple required><br><br>
+            <input type="file" id="documents" name="documents" required><br><br>
     
-            <button type="submit">Upload Documents</button>        </form>
+            <button type="submit">Upload Documents</button>        
+        </form>
 
     </main>
     <footer><p>&copy; <span id='copyright-year'></span> | Tyler McCleve | BYU Idaho | WDD 131</p>
