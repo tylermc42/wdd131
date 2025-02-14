@@ -1,4 +1,3 @@
-# Add quote for things following an =
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -17,12 +16,13 @@
 </head>
 <body>
     <header>
-        <figure class="header_pic">
-            <img src="final_project/images/welcome_sign.jpg" alt="Welcome Sign">
-        </figure>
-        <h1>Jorde Farms</h1>
-        <div class="button">
-            <button id="menu"></button>
+        <div class="head_bar">
+            <figure class="header_pic">
+                <img src="final_project/images/welcome_sign.jpg" alt="Welcome Sign" width="150">
+            </figure>
+            <h1>Jorde Farms Neighborhood</h1>
+        </div>
+        <div>
             <nav>
                 <ul class="navigation">
                     <li><a href="jorde_farms.html">Home</a></li>
@@ -34,11 +34,30 @@
         </div>
     </header>
     <main>
-
-
+        <div class="newsletter">
+            <h2>Stay in Touch</h2>
+            <p>Sign up for our monthly newsletters by entering your name and email below!</p>
+            <form id="signupForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p id="signupMessage"></p>
+        </div>
+        <div class="message">
+            <h2>Write to Us!</h2>
+            <p>If you have any questions or concerns about our community, please send us a message using the box below. Or you can email us at jordefarms@gmail.com</p>
+            <form id="contactForm">
+                <label for="message">Your Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="contactMessage"></p>
+        </div>
     </main>
     <footer><p>&copy; <span id='copyright-year'></span> | Tyler McCleve | BYU Idaho | WDD 131</p>
     <p>Date Last Modified: <span id='last-modified'></span></p></footer>
 </body>
-<script src='scripts/getdates.js' defer></script>
 </html>
