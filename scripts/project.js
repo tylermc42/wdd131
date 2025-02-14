@@ -31,3 +31,10 @@ contactForm.addEventListener('submit', function(event) {
         contactMessage.textContent = 'Please enter a message.';
     }
 });
+
+function uploadData() {
+    // JavaScript function to handle form submission
+    const formData = new FormData(document.getElementById('submissionForm'));
+    // Add your upload logic here
+    console.log('Form submitted', formData);
+}
