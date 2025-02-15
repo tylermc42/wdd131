@@ -42,6 +42,8 @@ function uploadData() {
 // clear fields after submit button is pressed
 document.querySelector('form').addEventListener('submit', function() {
     document.getElementById('name').value = '';
+    document.getElementById('fname').value = '';
+    document.getElementById('lname').value = '';
     document.getElementById('email').value = '';
     document.getElementById('message').value = '';
     document.getElementById('address').value = '';

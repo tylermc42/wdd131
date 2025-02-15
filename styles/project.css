@@ -47,8 +47,10 @@ footer {
     border-bottom: 1px solid black;
 }
 
+
+
 /*large desktop view*/
-@media (min-width: 550px){
+@media (min-width: 760px){
 
     /*Home page*/
     .home {
@@ -205,7 +207,7 @@ footer {
 
 
 
-@media (max-width: 1200px){
+@media (max-width: 1000px){
     .home_images {
         display: grid;
         grid-template-columns: 1fr;
@@ -213,24 +215,188 @@ footer {
 
 }
 
-@media (max-width: 550px){
+
+@media (max-width: 760px){
     /**/
     .navigation {
         display: grid;
         justify-content: space-around;
         list-style-type: none;
-        text-align: left;
+        text-align: center;
         padding-bottom: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .navigation li{
+        padding: 1rem;
+
     }
     .head_bar {
         display: grid;
         border-bottom: 1px solid black;
+        text-align: center;
+    }
+    .head_bar img {
+        width: 300px;
     }
 
-    .com_image {
-        width: 500px;
+
+    /*Home page*/
+    .home {
+        padding: 1rem;
+        justify-items: center;
+    }
+
+    .home_text h2 {
+        border-bottom: 1px solid black;
+        text-align: center;
+    } 
+
+    .home_text p {
+        width: 75%;
+        font-size: larger;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .home_text {
+        justify-items: center;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        background-color: var(--third-color);
+        width: 100%;
+    }
+    .home_image img{
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    .home_images {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .home_images img {
+        width: 100%;
+    }
+
+    /*Documents page*/
+    .doc_link_list a {
+        color: black;
+        font-size: large;
+        padding: 1rem;
+    }
+
+    .doc_link_list a:hover {
+        font-size: x-large;
+    }
+
+    .doc_link_list li {
+        list-style-type: none;
+        padding: 2rem;
+    }
+
+    .documents {
+        text-align: center;
+    }
+
+    .documents h2{
+        font-size: xx-large;
+        text-decoration: underline;
+    }
+
+    /*communication page*/
+    .com_main {
+        padding: 1rem;
+    }
+    .com_image{
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+    .com_image img{
+        width: 300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    .newsletter {
+        display: block;
+        border: 1px solid black;
+        margin: auto;
+        width: 80%;
+        text-align: center;
+        border-radius: 10px;
+        background-color: var(--third-color);
+    }
+    .newsletter h2{
+        text-decoration: underline;
+    }
+    #signupForm {
+        display: block;
+        margin: auto;
+        padding: 10px;
+        text-align: left;
+    }
+    .newsletter input[type="text"],
+    .newsletter input[type="email"] {
+        margin-right: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .message {
+        display: block;
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 1rem;
+        width: 80%;
+        text-align: center;
+        border-radius: 10px;
+        padding-bottom: 1rem;
+        background-color: var(--third-color);
+    }
+    .message h2{
+        text-decoration: underline;
+    }
+    .message p {
+        padding: 10px;
+    }
+    .message textarea {
+        height: 200px;
+        width: 80%;
+        vertical-align: middle;
+    }
+    .message button {
+        margin: 10px;
+    }
+        /*Submit page*/
+    .submit_main {
+        padding-bottom: 2rem
+    }
+    .submit_title {
+        padding: 1rem;
+        text-align: center;
+    }
+    .submit_main h2{
+        text-decoration: underline;
+        padding: 1rem;
+    }
+    .submissionform {
+        border: 1px solid black;
+        width: 80%;
+        padding: 1rem;
+        background-color: var(--third-color);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .submissionform textarea {
+        width: 90%;
+    }
+    .submissionform input[type = "radio"]{
+        width: 20px;
+        height: 20px;
+        margin-top: 20px;
+    }
+
 }
