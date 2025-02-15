@@ -1,3 +1,4 @@
+// stay in touch
 const signupForm = document.getElementById('signupForm');
 const signupMessage = document.getElementById('signupMessage');
 
@@ -15,6 +16,7 @@ signupForm.addEventListener('submit', function(event) {
     }
 });
 
+//write to us
 const contactForm = document.getElementById('contactForm');
 const contactMessage = document.getElementById('contactMessage');
 
@@ -32,12 +34,29 @@ contactForm.addEventListener('submit', function(event) {
     }
 });
 
-function uploadData() {
-    // JavaScript function to handle form submission
-    const formData = new FormData(document.getElementById('submissionForm'));
-    // Add your upload logic here
-    console.log('Form submitted', formData);
-}
+// document submission
+document.getElementById('uploadForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const fileInput = document.getElementById('documents');
+    const formData = new FormData();
+    
+    for (let i = 0; i < fileInput.files.length; i++) {
+        formData.append('documents', fileInput.files[i]);
+    }
+    
+    fetch('/upload', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success:', data);
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+});
 
 // clear fields after submit button is pressed
 document.querySelector('form').addEventListener('submit', function() {
