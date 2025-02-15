@@ -38,7 +38,7 @@
             <h2>User Form Submission</h2>
             <p>If you have form that you need to turn in to the HOA, use this page to upload all your forms!</p>
         </div>
-        <form id="docSubmission" class="submissionform">
+        <form class="submissionform">
             <label>First Name:  <input type="text" id="fname" name="name" required></label><br><br>
             <label>Last Name:   <input type="text" id="lname" name="name" required><br><br></label>
             <label>Address: <input type="text" id="address" name="address" required><br><br></label>
@@ -54,7 +54,7 @@
             <textarea id="explanation" name="explanation" rows="4" cols="50" required></textarea><br><br>
     
             <label for="documents">Upload documents:</label>
-            <input type="file" id="documents" name="documents" required><br><br>
+            <input type="file" id="fileInput" name="documents" accept=".pdf,.doc,.docx,.txt" required><br><br>
     
             <button type="submit">Upload Documents</button>        
         </form>
