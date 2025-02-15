@@ -32,21 +32,25 @@ contactForm.addEventListener('submit', function(event) {
     } else {
         contactMessage.textContent = 'Please enter a message.';
     }
+    
 });
 
 
 // form submission
-function uploadData() {
-    // JavaScript function to handle form submission
-    const formData = new FormData(document.getElementById('submissionForm'));
-    // Add your upload logic here
-    if (formData) {
-        console.log('Form submitted', formData);
+contactForm.addEventListener('submit', function(uploadData) {
+
+    function uploadData() {
+        // JavaScript function to handle form submission
+        const formData = new FormData(document.getElementById('submissionForm'));
+        // Add your upload logic here
+        if (formData) {
+            console.log('Form submitted', formData);
+        }
+        else {
+            contactMessage.textContent = "Please upload a form."
+        }
     }
-    else {
-        contactMessage.textContent = "Please upload a form."
-    }
-};
+});
 
 // clear fields after submit button is pressed
 document.querySelector('form').addEventListener('submit', function() {
